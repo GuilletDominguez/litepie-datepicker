@@ -483,7 +483,7 @@ function render$1(_ctx, _cache, $props, $setup, $data, $options) {
   }, vue.toDisplayString(_ctx.i18n.pastMonth), 1)])]))])) : vue.createCommentVNode("", true);
 }script$1.render = render$1;function __variableDynamicImportRuntime0__(path) {
   switch (path) {
-
+    case './locale/es.js': return Promise.resolve().then(function(){return es});
     default: return new Promise(function(resolve, reject) {
       (typeof queueMicrotask === 'function' ? queueMicrotask : setTimeout)(
         reject.bind(null, new Error("Unknown variable dynamic import: " + path))
@@ -1962,4 +1962,4 @@ Object.entries(namedExports).forEach(function (_ref) {
     exportName = _ref2[0],
     exported = _ref2[1];
   if (exportName !== 'default') component[exportName] = exported;
-});module.exports=component;
+});var es=/*#__PURE__*/Object.freeze({__proto__:null});module.exports=component;

@@ -444,7 +444,7 @@ script$1.render = render$1;
 
 function __variableDynamicImportRuntime0__(path) {
   switch (path) {
-
+    case './locale/es.js': return Promise.resolve().then(function () { return es; });
     default: return new Promise(function(resolve, reject) {
       (typeof queueMicrotask === 'function' ? queueMicrotask : setTimeout)(
         reject.bind(null, new Error("Unknown variable dynamic import: " + path))
@@ -1763,5 +1763,9 @@ var entry_esm = /*#__PURE__*/(() => {
 // It's possible to expose named exports when writing components that can
 // also be used as directives, etc. - eg. import { RollupDemoDirective } from 'rollup-demo';
 // export const RollupDemoDirective = directive;
+
+var es = /*#__PURE__*/Object.freeze({
+  __proto__: null
+});
 
 export { entry_esm as default };
